@@ -101,8 +101,11 @@ body {
   margin-right: 35px;
 }
 
-.main {
-  grid-area: info;
+section {
+  padding-bottom: 10px;
+  border-radius: var(--border-radius);
+  background-color: var(--block-bg);
+  overflow: hidden;
 }
 
 #contacts {
@@ -112,7 +115,6 @@ body {
 
 .contacts {
   grid-area: contacts;
-  background-color: var(--block-bg);
   border-radius: var(--border-radius);
 }
 
@@ -177,6 +179,21 @@ figure figcaption h1 {
 
 .list__item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.main {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--blocks-gap);
+}
+
+.about__title {
+  margin-top: 0;
+}
+
+.about__descr {
+  padding: 0 15px 0 25px;
 }
 
 .footer {
