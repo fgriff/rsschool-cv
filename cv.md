@@ -42,3 +42,11 @@ static async addWinner(winCar: WinnerCar): Promise<void> {
   }
 }
 ```
+
+## Education:
+
+* RSSchool (JavaScript/Front-end course 2021Q1)
+* Dmitry Lavrik (js course)
+* Glo-academy (html/css/js course)
+* Htmlacademy (html/css course)
+* Rybinsk State Aviation Technological Academy. Faculty of Aircraft Engines
