@@ -214,6 +214,10 @@ figure figcaption h1 {
   font-size: 14px;
 }
 
+.language__descr {
+  padding-left: 25px;
+}
+
 .footer {
   grid-area: footer;
 }
