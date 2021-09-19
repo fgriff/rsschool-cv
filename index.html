@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/darcula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="./styles/style.css">
   <title>Vyacheclav Rozov CV</title>
 </head>
@@ -81,6 +84,28 @@
           <li class="list__item">Htmlacademy (html/css course)</li>
           <li class="list__item">Rybinsk State Aviation Technological Academy. Faculty of Aircraft Engines</li>
         </ul>
+      </section>
+
+      <section id="example" class="code-example">
+        <h2 class="code-example__title heading">Code example</h2>
+        <pre class="code__wrapper">
+          <code class="code__text hljs language-js javascript">
+            static async addWinner(winCar: WinnerCar): Promise&lt;void&gt; {
+              const winner = await getWinner(winCar.id);
+            
+              if (!winner.id) {
+                await createWinner({ id: winCar.id, wins: 1, time: winCar.time });
+              } else if (winner.time &gt; winCar.time) {
+                const newWinner = {
+                  wins: winner.wins + 1,
+                  time: winCar.time,
+                };
+            
+                await updateWinner(winCar.id, newWinner);
+              }
+            }
+          </code>
+        </pre>
       </section>
     </main>
 

@@ -197,6 +197,23 @@ figure figcaption h1 {
   padding: 0 15px 0 25px;
 }
 
+.code__wrapper {
+  margin: 0;
+}
+
+.code__text::-webkit-scrollbar {
+  height: 7px;
+}
+
+.code__text::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg);
+  border-radius: 5px;
+}
+
+.code__text {
+  font-size: 14px;
+}
+
 .footer {
   grid-area: footer;
 }
