@@ -41,7 +41,20 @@ img {
 }
 
 :root {
+  --main-color: #002250;
+  --border-radius: 5px;
   --blocks-gap: 10px;
+  --block-bg: #3ba3d0;
+  --block-title-bg: #e1bb40;
+}
+
+body {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--main-color);
+  padding: 10px 0;
 }
 
 .container {
@@ -59,6 +72,30 @@ img {
 
 .header {
   grid-area: header;
+  height: 50px;
+  background-color: var(--block-bg);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__menu .menu__item {
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+
+.header__menu .menu__item:hover {
+  color: var(--block-title-bg);
+}
+
+
+.header__menu .menu__item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .main {
