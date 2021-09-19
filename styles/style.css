@@ -46,6 +46,7 @@ img {
   --blocks-gap: 10px;
   --block-bg: #3ba3d0;
   --main-bg: #0772a1;
+  --item-bg: #63afd0;
   --block-title-bg: #e1bb40;
 }
 
@@ -104,6 +105,11 @@ body {
   grid-area: info;
 }
 
+#contacts {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
 .contacts {
   grid-area: contacts;
   background-color: var(--block-bg);
@@ -137,6 +143,40 @@ figure figcaption {
 
 figure figcaption h1 {
   font-size: 30px;
+}
+
+.heading {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: var(--block-title-color);
+  background-color: var(--block-title-bg);
+}
+
+.contacts__links li {
+  margin-top: 25px;
+}
+
+.contacts__links img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.contacts__links a {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.list__item {
+  padding: 5px 15px;
+  background-color: var(--item-bg);
+  border-radius: var(--border-radius);
+  margin: 0 10px;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .footer {
