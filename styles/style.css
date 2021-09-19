@@ -45,6 +45,7 @@ img {
   --border-radius: 5px;
   --blocks-gap: 10px;
   --block-bg: #3ba3d0;
+  --main-bg: #0772a1;
   --block-title-bg: #e1bb40;
 }
 
@@ -54,6 +55,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: var(--main-color);
+  background-color: var(--main-bg);
   padding: 10px 0;
 }
 
@@ -104,6 +106,37 @@ body {
 
 .contacts {
   grid-area: contacts;
+  background-color: var(--block-bg);
+  border-radius: var(--border-radius);
+}
+
+.contacts__foto {
+  margin: 50px 0 35px 0;
+  text-align: center;
+}
+
+.contacts__round {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure figcaption {
+  margin-top: 25px;
+}
+
+figure figcaption h1 {
+  font-size: 30px;
 }
 
 .footer {
