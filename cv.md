@@ -50,3 +50,7 @@ static async addWinner(winCar: WinnerCar): Promise<void> {
 * Glo-academy (html/css/js course)
 * Htmlacademy (html/css course)
 * Rybinsk State Aviation Technological Academy. Faculty of Aircraft Engines
+
+## English level:
+
+I attended English courses for 4 years. I got to the level of the upper-intermediate. Leave them 3 years ago. Now I rate my level as a A2 (*pre-intermediate*)
