@@ -249,6 +249,7 @@ figure figcaption h1 {
 
 .about__descr {
   padding: 0 15px 0 25px;
+  margin-bottom: 15px;
 }
 
 .code__wrapper {
