@@ -120,6 +120,24 @@ body {
   bottom: 0;
 }
 
+.menu-opened .top {
+  width: 46px;
+  top: 50%;
+  transform: translateY(-50%) rotateZ(40deg);
+  transition: all 0.3s;
+}
+
+.menu-opened .center {
+  opacity: 0;
+}
+
+.menu-opened .bottom {
+  width: 46px;
+  top: 50%;
+  transform: translateY(-50%) rotateZ(-40deg);
+  transition: all 0.3s;
+}
+
 .header__menu {
   display: flex;
 }
