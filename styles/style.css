@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 *,
@@ -43,6 +44,7 @@ img {
 :root {
   --main-color: #002250;
   --border-radius: 5px;
+  --margin-top: 50px;
   --blocks-gap: 10px;
   --block-bg: #3ba3d0;
   --main-bg: #0772a1;
@@ -58,7 +60,6 @@ body {
   font-weight: 400;
   color: var(--main-color);
   background-color: var(--main-bg);
-  padding: 10px 0;
 }
 
 .container {
@@ -76,12 +77,14 @@ body {
 
 .header {
   grid-area: header;
-  height: 50px;
+  height: var(--margin-top);
   background-color: var(--block-bg);
   border-radius: var(--border-radius);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  box-shadow: 0 3px 3px var(--main-bg);
 }
 
 .burger {
@@ -171,6 +174,7 @@ section {
 .contacts {
   grid-area: contacts;
   border-radius: var(--border-radius);
+  margin-top: var(--margin-top);
 }
 
 .contacts__foto {
@@ -241,6 +245,10 @@ figure figcaption h1 {
   display: flex;
   flex-direction: column;
   row-gap: var(--blocks-gap);
+}
+
+.about {
+  margin-top: var(--margin-top);
 }
 
 .about iframe {
@@ -382,24 +390,13 @@ figure figcaption h1 {
 }
 
 @media (max-width: 850px) {
-  html {
-    scroll-padding-top: 50px;
-  }
-
   body {
     padding-top: 0;
   }
 
   .header {
-    position: fixed;
-    width: 100%;
     padding: 20px;
     justify-content: flex-start;
-    box-shadow: 0 3px 3px var(--main-bg);
-  }
-
-  .contacts {
-    margin-top: 50px;
   }
 
   .burger {
