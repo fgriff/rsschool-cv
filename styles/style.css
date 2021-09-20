@@ -468,3 +468,15 @@ figure figcaption h1 {
     text-align: center;
   }
 }
+
+@media (max-width: 520px) {
+  .code__text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .code__text {
+    font-size: 6px;
+  }
+}
