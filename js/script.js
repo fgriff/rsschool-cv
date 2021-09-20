@@ -37,6 +37,7 @@ window.onload = () => {
     };
   });
 
+  const prLink = 'https://github.com/fgriff/rsschool-cv/pull/4';
   const item1 = '1. Верстка валидная. Document checking completed. No errors or warnings to show: +10 баллов';
   const item2 = '2. Верстка семантическая. В коде присутствуют следующие теги HTML5: header, nav, figure, figcaption, section, main, h1, h2, h3, time: +20 баллов';
   const item3 = '3. Для оформления СV используются css-стили: +10 баллов';
@@ -53,6 +54,7 @@ window.onload = () => {
   const item14 = '14. Есть видеорезюме автора CV на английском языке. В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке: +10 баллов';
   const item15 = '15. Дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию: +10 баллов';
  
+  console.log('Ссылка на Pull Request: ', prLink);
   console.log('Самооценка:');
   console.log(item1);
   console.log(item2);
