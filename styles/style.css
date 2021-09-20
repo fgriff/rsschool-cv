@@ -345,3 +345,15 @@ figure figcaption h1 {
   width: 75px;
   height: 75px;
 }
+
+@media (max-width: 1030px) {
+  .code__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 960px) {
+  .code__text {
+    font-size: 12px;
+  }
+}
