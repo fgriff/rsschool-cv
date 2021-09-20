@@ -357,3 +357,19 @@ figure figcaption h1 {
     font-size: 12px;
   }
 }
+
+@media (max-width: 915px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+      "header"
+      "contacts"
+      "info"
+      "footer";
+  }
+
+  .code__text {
+    font-size: 14px;
+  }
+}
