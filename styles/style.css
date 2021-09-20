@@ -452,6 +452,10 @@ figure figcaption h1 {
 }
 
 @media (max-width: 670px) {
+  .about iframe {
+    height: 300px;
+  }
+
   .code__text {
     font-size: 12px;
   }
@@ -477,6 +481,10 @@ figure figcaption h1 {
 }
 
 @media (max-width: 520px) {
+  .about iframe {
+    height: 250px;
+  }
+
   .code__text {
     font-size: 8px;
   }
