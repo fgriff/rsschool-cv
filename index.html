@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/darcula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Vyacheclav Rozov CV</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="burger">
+        <span class="top"></span>
+        <span class="center"></span>
+        <span class="bottom"></span>
+      </div>
+      <nav>
+        <ul class="header__menu">
+          <li class="menu__item"><a href="#about">About me</a></li>
+          <li class="menu__item"><a href="#skills">Skills</a></li>
+          <li class="menu__item"><a href="#education">Education</a></li>
+          <li class="menu__item"><a href="#contacts">Contacts</a></li>
+          <li class="menu__item"><a href="#example">Code example</a></li>
+          <li class="menu__item"><a href="#projects">My projects</a></li>
+          <li class="menu__item"><a href="#language">English level</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contacts">
+      <figure class="contacts__foto">
+        <div class="contacts__round">
+          <img class="contacts__avatar" src="./img/my_foto.jpg" alt="My foto">
+        </div>
+        <figcaption>
+          <h1>Vyacheslav Rozov</h1>
+        </figcaption>
+      </figure>
+      <h2 id="contacts" class="heading">Contacts</h2>
+      <ul class="contacts__links">
+        <li class="list__item">
+          <img src="./img/telegram.svg" alt="Telegram">
+          <a class="link-reset" href="tg://resolve?domain=anglirum">anglirum</a>
+        </li>
+        <li class="list__item">
+          <img src="./img/discord.svg" alt="Discord">
+          <a class="link-reset">SR#5553</a>
+        </li>
+        <li class="list__item">
+          <img src="./img/gmail.svg" alt="Email">
+          <a class="link-reset" href="mailto:anglirum@gmail.com">anglirum@gmail.com</a>
+        </li>
+        <li class="list__item">
+          <img src="./img/github.svg" alt="Github">
+          <a class="link-reset" href="https://github.com/fgriff" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <main class="main">
+      <section id="about" class="about">
+        <h2 class="about__title heading">About me</h2>
+        <p class="about__descr">I got into web programming in 2017. At first it was a hobby, but now I strive to turn it into my work. My goal is to become a full-stack developer</p>
+      </section>
+
+      <section id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <li class="list__item">HTML</li>
+          <li class="list__item">CSS</li>
+          <li class="list__item">JavaScript</li>
+          <li class="list__item">TypeScript</li>
+          <li class="list__item">SASS/SCSS/LESS</li>
+          <li class="list__item">BEM methodology</li>
+          <li class="list__item">Git</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2 class="heading">Education</h2>
+        <ul>
+          <li class="list__item">RSSchool (JavaScript/Front-end course 2021Q1)</li>
+          <li class="list__item">Dmitry Lavrik (js course)</li>
+          <li class="list__item">Glo-academy (html/css/js course)</li>
+          <li class="list__item">Htmlacademy (html/css course)</li>
+          <li class="list__item">Rybinsk State Aviation Technological Academy. Faculty of Aircraft Engines</li>
+        </ul>
+      </section>
+
+      <section id="example" class="code-example">
+        <h2 class="code-example__title heading">Code example</h2>
+        <pre class="code__wrapper">
+          <code class="code__text hljs language-js javascript">
+            static async addWinner(winCar: WinnerCar): Promise&lt;void&gt; {
+              const winner = await getWinner(winCar.id);
+            
+              if (!winner.id) {
+                await createWinner({ id: winCar.id, wins: 1, time: winCar.time });
+              } else if (winner.time &gt; winCar.time) {
+                const newWinner = {
+                  wins: winner.wins + 1,
+                  time: winCar.time,
+                };
+            
+                await updateWinner(winCar.id, newWinner);
+              }
+            }
+          </code>
+        </pre>
+      </section>
+
+      <section id="projects">
+        <h2 class="heading">My projects</h2>
+        <div class="project">
+          <a class="project__link" href="https://rolling-scopes-school.github.io/fgriff-JSFE2021Q1/online-zoo/" target="_blank">
+            <img src="./img/online-zoo.png" alt="Online-zoo">
+          </a>
+          <div class="descr">
+            <h3 class="descr__name">Online zoo</h3>
+            <p>This is an online zoo that allows you to see pets in any of the zoos or in the wild, where there are cameras of constant broadcasting. There is also the opportunity to feed the animal online</p>
+            <p class="technologies">HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+        <div class="project">
+          <a class="project__link" href="https://rolling-scopes-school.github.io/fgriff-JSFE2021Q1/match-match-game/" target="_blank">
+            <img src="./img/match-match-game.png" alt="Match-match-game">
+          </a>
+          <div class="descr">
+            <h3 class="descr__name">Match match game</h3>
+            <p>The game is used to train memory</p>
+            <p class="technologies">HTML, CSS, TypeScript, Webpack</p>
+          </div>
+        </div>
+        <div class="project">
+          <a class="project__link" href="https://rolling-scopes-school.github.io/fgriff-JSFE2021Q1/english-for-kids/" target="_blank">
+            <img src="./img/english-for-kids.png" alt="English-for-kids">
+          </a>
+          <div class="descr">
+            <h3 class="descr__name">English for kids</h3>
+            <p>App for kids to learn English words</p>
+            <p class="technologies">HTML, CSS, TypeScript, Webpack</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="language">
+        <h2 class="heading">English level</h2>
+        <p class="language__descr"> A2 (pre-intermediate)</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="github-link" href="https://github.com/fgriff">GitHub</a>
+      <time class="year" datetime="2021">2021</time>
+      <a href="https://rs.school/js/" target="_blank">
+        <img class="rsschool-icon" src="./img/rs_school-icon.svg" alt="RSSchool-icon">
+      </a>
+    </footer>
+  </div>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>
