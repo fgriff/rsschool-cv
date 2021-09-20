@@ -437,3 +437,15 @@ figure figcaption h1 {
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 725px) {
+  .code__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 670px) {
+  .code__text {
+    font-size: 12px;
+  }
+}
