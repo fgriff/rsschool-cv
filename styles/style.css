@@ -390,6 +390,12 @@ figure figcaption h1 {
 }
 
 @media (max-width: 850px) {
+  .header__menu .menu__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 750px) {
   body {
     padding-top: 0;
   }
