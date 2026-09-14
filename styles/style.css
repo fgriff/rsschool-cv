@@ -185,7 +185,6 @@ figure figcaption h1 {
 .incoming,
 .outgoing {
   position: relative;
-  z-index: -1;
 }
 
 .incoming::before,
@@ -237,6 +236,10 @@ figure figcaption h1 {
 
 .code__text {
   font-size: 16px;
+}
+
+.projects .list__item a {
+  cursor: pointer;
 }
 
 .footer {
