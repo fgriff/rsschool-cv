@@ -217,6 +217,10 @@ figure figcaption h1 {
   border-bottom: 12px solid var(--section-content-bg);
 }
 
+.list__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .footer {
   grid-area: footer;
 }
