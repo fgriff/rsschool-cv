@@ -19,3 +19,19 @@ At one point I took up web programming. At first it was a hobby, but now I striv
 * SASS/SCSS/LESS
 * BEM methodology
 * Git
+
+## Code example:
+
+```
+function winnings(lottery) {
+  let total = 0;
+
+  for (const str of lottery) {
+    if (/([a-z]+?\s)\1\1/.test(str)) {
+      total += +str.match(/\d+/)[0];
+    }
+  }
+
+  return total;
+}
+```
