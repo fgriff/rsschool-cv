@@ -65,6 +65,25 @@
           <li class="list__item">Git</li>
         </ul>
       </section>
+
+      <section id="example" class="code-example">
+        <h2 class="section__heading incoming">Code example</h2>
+        <pre class="section__content outgoing">
+          <code class="code-example__text hljs language-js javascript">
+            function winnings(lottery) {
+              let total = 0;
+
+              for (const str of lottery) {
+                if (/([a-z]+?\s)\1\1/.test(str)) {
+                  total += +str.match(/\d+/)[0];
+                }
+              }
+
+              return total;
+            }
+          </code>
+        </pre>
+      </section>
     </main>
 
     <footer class="footer"></footer>

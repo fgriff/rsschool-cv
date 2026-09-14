@@ -221,6 +221,24 @@ figure figcaption h1 {
   margin-bottom: 5px;
 }
 
+.code-example__text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.code__text::-webkit-scrollbar {
+  height: 7px;
+}
+
+.code__text::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg);
+  border-radius: 5px;
+}
+
+.code__text {
+  font-size: 16px;
+}
+
 .footer {
   grid-area: footer;
 }
