@@ -244,4 +244,27 @@ figure figcaption h1 {
 
 .footer {
   grid-area: footer;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.github-link,
+.year,
+.rsschool-icon {
+  display: block;
+}
+
+.github-link:hover {
+  color: var(--block-title-bg);
+}
+
+.rsschool-icon {
+  width: 75px;
+  height: 75px;
 }
