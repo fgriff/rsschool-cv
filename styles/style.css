@@ -31,3 +31,36 @@ img {
 	src: url('../fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
 }
+
+:root {
+  --blocks-gap: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: calc(30% - var(--blocks-gap) / 2) calc(70% - var(--blocks-gap) / 2);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+    "header header"
+    "contacts info"
+    "footer footer ";
+  grid-gap: var(--blocks-gap);
+}
+
+.header {
+  grid-area: header;
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.main {
+  grid-area: info;
+}
+
+.footer {
+  grid-area: footer;
+}
