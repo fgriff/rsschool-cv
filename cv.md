@@ -41,3 +41,8 @@ function winnings(lottery) {
 * RSSchool
 * Htmlacademy (html/css course)
 * Soloviev Rybinsk State Aviation Technological Academy
+
+## Languages:
+
+* Russian - Native
+* English - A2
