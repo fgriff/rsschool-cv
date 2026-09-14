@@ -33,7 +33,20 @@ img {
 }
 
 :root {
+  --main-bg: #c3cece;
+  --secondary-bg: #b5bcc0;
   --blocks-gap: 10px;
+  --border-radius: 15px;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background-color: var(--main-bg);
+  font-family: "Roboto-Regular", sans-serif;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .container {
@@ -51,6 +64,25 @@ img {
 
 .header {
   grid-area: header;
+  height: 50px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav .nav__item {
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+
+.header__nav .nav__item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .contacts {
