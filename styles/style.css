@@ -35,6 +35,7 @@ img {
 :root {
   --main-bg: #c3cece;
   --secondary-bg: #b5bcc0;
+  --section-heading-color: #2c3034;
   --blocks-gap: 10px;
   --border-radius: 15px;
 }
@@ -87,6 +88,66 @@ body {
 
 .contacts {
   grid-area: contacts;
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-bg);
+}
+
+.contacts__avatar {
+  margin: 50px 0 35px 0;
+  text-align: center;
+}
+
+.contacts__round {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure figcaption {
+  margin-top: 25px;
+  color: var(--section-heading-color);
+}
+
+figure figcaption h1 {
+  font-size: 30px;
+}
+
+.contacts__heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--section-heading-color);
+}
+
+.contacts__list {
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+}
+
+.contacts__list li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.contacts__list img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.contacts__list a {
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .main {
