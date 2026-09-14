@@ -35,3 +35,9 @@ function winnings(lottery) {
   return total;
 }
 ```
+
+## Education:
+
+* RSSchool
+* Htmlacademy (html/css course)
+* Soloviev Rybinsk State Aviation Technological Academy
